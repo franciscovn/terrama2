@@ -4,6 +4,7 @@
 var DataManager = require('./../../core/DataManager');
 var Enums = require('./../../core/Enums');
 var makeTokenParameters = require('../../core/Utils').makeTokenParameters;
+var Application = require("./../../core/Application");
 
 /**
  * It exports a object with StaticDataSeries controllers (get/new/edit)
@@ -19,7 +20,8 @@ module.exports = function(app) {
     },
 
     new: function(request, response) {
-      response.render('configuration/dataset', {type: "static", "Enums": Enums});
+      var configFile = Application.getContextConfig();
+      response.render('configuration/dataset', {type: "static", "Enums": Enums, defaultFilePath: configFile.defaultFilePath});
     },
 
     edit: function(request, response) {

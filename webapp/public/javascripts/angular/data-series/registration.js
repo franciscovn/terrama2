@@ -651,8 +651,20 @@ define([], function() {
           properties: formTranslatorResult.object,
           required: dataSeriesSemantics.metadata.schema.required
         };
-
+        
         $scope.form = formTranslatorResult.display;
+
+        if (dataSeriesSemantics.temporality == "STATIC" && (dataSeriesSemantics.code == "GRID-static_gdal" || dataSeriesSemantics.code == "STATIC_DATA-ogr") ){
+          var folderDisplay = {
+            key: 'file_explorer_button',
+            type: 'button',
+            htmlClass: 'col-md-1 terrama2-schema-form',
+            style: 'btn-primary pull-right button-inline-form fa fa-folder',
+            onClick: 'openFileExplorer(forms.parametersForm);'
+          }
+          $scope.form.push(folderDisplay);
+          $scope.schema.properties["file_explorer_button"] = {};
+        }
 
         $scope.$broadcast('schemaFormRedraw');
 
