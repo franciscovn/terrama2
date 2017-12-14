@@ -117,14 +117,14 @@
     yesterday.setMinutes(0);
     yesterday.setSeconds(0);
     yesterday.setMilliseconds(0);
-    return today.toISOString() + "/" + yesterday.toISOString();
+    return yesterday.toISOString() + "/" + today.toISOString();
   }
 
   $(document).ready(function() {
 
     var mapImage = document.getElementById("mainImage");
     var timeInfo = getTimeInfoSinceYesterday();
-    var imageHref = "http://localhost:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_9:marble_pyramid,terrama2q:focos&time=" + timeInfo + "&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
+    var imageHref = "http://localhost:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2q:marble_pyramid,terrama2_4:view4,terrama2_1:view1&time=" + timeInfo + "&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
     //var imageHref = "http://localhost:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_9:marble_pyramid,terrama2q:focos&time=2017-12-05T00:59:11.000Z/2017-12-05T08:59:11.000Z&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
     mapImage.setAttribute("src", imageHref);
 
