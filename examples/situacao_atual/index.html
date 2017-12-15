@@ -61,11 +61,71 @@
           -->
           <div class="row">
             <div class="col-12">
+              <h3>Contagem por países</h3>
+              <p>Número de focos acumulados por Países</p>
+            </div>
+            <div class="offset-2 col-8 table-situacao">
+              <h5>Contagem de focos acumulados em 24h</h5>
+              <table id="tablePaises1d" class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Pais</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartPaises1d" width="400" height="300"></canvas>
+            </div>
+
+            <div class="offset-2 col-8 table-situacao">
+              <hr>
+              <h5>Contagem de focos acumulados em um mês</h5>
+              <table id="tablePaisesMes" class="table table-sm  table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Paises</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartPaisesMes" width="400" height="300"></canvas>
+            </div>
+
+            <div class="offset-2 col-8 table-situacao">
+              <hr>
+              <h5>Contagem de focos acumulados em um ano</h5>
+              <table id="tablePaisesAno" class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Ano</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartPaisesAno" width="400" height="300"></canvas>
+            </div>
+
+            <div class="col-12">
               <h3>Contagem por estados</h3>
               <p>Número de focos acumulados por Estados</p>
             </div>
             <div class="offset-2 col-8 table-situacao">
-              <h5>Contagem de focos acumulados em 48h</h5>
+              <h5>Contagem de focos acumulados em 24h</h5>
               <table id="tableEstados1d" class="table table-sm table-striped">
                 <thead>
                   <tr>
@@ -85,7 +145,7 @@
             <div class="offset-2 col-8 table-situacao">
               <hr>
               <h5>Contagem de focos acumulados em um mês</h5>
-              <table id="tableEstados2d" class="table table-sm  table-striped">
+              <table id="tableEstadosMes" class="table table-sm  table-striped">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -98,13 +158,13 @@
               </table>
             </div>
             <div class="offset-2 col-8 chart-situacao">
-              <canvas id="chartEstados2d" width="400" height="300"></canvas>
+              <canvas id="chartEstadosMes" width="400" height="300"></canvas>
             </div>
 
             <div class="offset-2 col-8 table-situacao">
               <hr>
               <h5>Contagem de focos acumulados em um ano</h5>
-              <table id="tableEstados3d" class="table table-sm table-striped">
+              <table id="tableEstadosAno" class="table table-sm table-striped">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -117,7 +177,68 @@
               </table>
             </div>
             <div class="offset-2 col-8 chart-situacao">
-              <canvas id="chartEstados3d" width="400" height="300"></canvas>
+              <canvas id="chartEstadosAno" width="400" height="300"></canvas>
+            </div>
+          </div>
+
+          <div class="col-12">
+              <h3>Contagem por biomas</h3>
+              <p>Número de focos acumulados por Biomas</p>
+            </div>
+            <div class="offset-2 col-8 table-situacao">
+              <h5>Contagem de focos acumulados em 24h</h5>
+              <table id="tableBiomas1d" class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Bioma</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartBiomas1d" width="400" height="300"></canvas>
+            </div>
+
+            <div class="offset-2 col-8 table-situacao">
+              <hr>
+              <h5>Contagem de focos acumulados em um mês</h5>
+              <table id="tableBiomasMes" class="table table-sm  table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Bioma</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartBiomasMes" width="400" height="300"></canvas>
+            </div>
+
+            <div class="offset-2 col-8 table-situacao">
+              <hr>
+              <h5>Contagem de focos acumulados em um ano</h5>
+              <table id="tableBiomasAno" class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Bioma</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartBiomasAno" width="400" height="300"></canvas>
             </div>
           </div>
 
